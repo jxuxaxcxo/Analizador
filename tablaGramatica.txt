@@ -1,0 +1,64 @@
+Nonterminal\yourCodeRunsHere\{\}\mission\NombreC\(\)\NombreS\NombreN\NombreB\return\;\,\legit\identificadorB\number\identificadorN\chain\identificadorS\chainLink\identificadorC\identificador\=\asLongAs\assumingThat\assumingAgainThat\assumingItFailed\global\+\caracter\cadena\identificadorP\-\*\/\^\numero\&&\||\boolean\is\not\$\
+Inicio\Inicio -> main Funciones\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+main\main -> yourCodeRunsHere { expresion }\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+Funciones\~\~\~\Funciones -> funcion Funciones\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\Funciones -> #\
+funcion\~\~\~\funcion -> mission tipo\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+tipo\~\~\~\~\tipo -> NombreC ( parametros ) { expresion returnC }\~\~\tipo -> NombreS ( parametros ) { expresion returnS }\tipo -> NombreN ( parametros ) { expresion returnN }\tipo -> NombreB ( parametros ) { expresion returnB }\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+returnC\~\~\returnC -> #\~\~\~\~\~\~\~\returnC -> return OCL ;\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+returnS\~\~\returnS -> #\~\~\~\~\~\~\~\returnS -> return OC ;\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+returnN\~\~\returnN -> #\~\~\~\~\~\~\~\returnN -> return OM ;\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+returnB\~\~\returnB -> #\~\~\~\~\~\~\~\returnB -> return OB ;\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+parametros\~\~\~\~\~\~\parametros -> #\~\~\~\~\~\~\parametros -> par parametros'\~\parametros -> par parametros'\~\parametros -> par parametros'\~\parametros -> par parametros'\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+parametros'\~\~\~\~\~\~\parametros' -> #\~\~\~\~\~\parametros' -> , par parametros'\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+par\~\~\~\~\~\~\~\~\~\~\~\~\~\par -> legit identificadorB\~\par -> number identificadorN\~\par -> chain identificadorS\~\par -> chainLink identificadorC\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+expresion\~\~\expresion -> #\expresion -> #\expresion -> sentencia ; expresion\~\~\expresion -> sentencia ; expresion\expresion -> sentencia ; expresion\expresion -> sentencia ; expresion\expresion -> #\~\~\expresion -> sentencia ; expresion\expresion -> sentencia ; expresion\expresion -> sentencia ; expresion\expresion -> sentencia ; expresion\expresion -> sentencia ; expresion\expresion -> sentencia ; expresion\expresion -> sentencia ; expresion\expresion -> sentencia ; expresion\expresion -> sentencia ; expresion\~\expresion -> ciclo expresion\expresion -> ciclo expresion\~\~\expresion -> sentencia ; expresion\~\~\~\~\~\~\~\~\~\~\~\~\~\~\expresion -> #\
+sentencia\~\~\~\~\sentencia -> llamada\~\~\sentencia -> llamada\sentencia -> llamada\sentencia -> llamada\~\~\~\sentencia -> asignacion\sentencia -> cambio\sentencia -> asignacion\sentencia -> cambio\sentencia -> asignacion\sentencia -> cambio\sentencia -> asignacion\sentencia -> cambio\sentencia -> cambio\~\~\~\~\~\sentencia -> asignacion\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+ciclo\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\ciclo -> iteracion\ciclo -> condicional\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+cambio\~\~\~\~\~\~\~\~\~\~\~\~\~\~\cambio -> identificadorB = OB\~\cambio -> identificadorN = OM\~\cambio -> identificadorS = OC\~\cambio -> identificadorC = OCL\cambio -> identificador = valor\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+iteracion\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\iteracion -> asLongAs ( condicion ) { expresion }\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+condicional\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\condicional -> assumingThat ( condicion ) { expresion } condicional'\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+condicional'\~\~\condicional' -> #\condicional' -> #\condicional' -> #\~\~\condicional' -> #\condicional' -> #\condicional' -> #\condicional' -> #\~\~\condicional' -> #\condicional' -> #\condicional' -> #\condicional' -> #\condicional' -> #\condicional' -> #\condicional' -> #\condicional' -> #\condicional' -> #\~\condicional' -> #\condicional' -> #\condicional' -> assumingAgainThat ( condicion ) { expresion } condicional'\condicional' -> assumingItFailed { expresion }\condicional' -> #\~\~\~\~\~\~\~\~\~\~\~\~\~\~\condicional' -> #\
+condicion\~\~\~\~\~\condicion -> OB\~\~\~\~\~\~\~\~\condicion -> OB\~\condicion -> OB\~\condicion -> OB\~\condicion -> OB\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\condicion -> OB\~\~\~\
+asignacion\~\~\~\~\~\~\~\~\~\~\~\~\~\asignacion -> asignacion'\~\asignacion -> asignacion'\~\asignacion -> asignacion'\~\asignacion -> asignacion'\~\~\~\~\~\~\~\asignacion -> global asignacion'\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+asignacion'\~\~\~\~\~\~\~\~\~\~\~\~\~\asignacion' -> legit identificadorB aB\~\asignacion' -> number identificadorN aN\~\asignacion' -> chain identificadorS aS\~\asignacion' -> chainLink identificadorC aC\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+aN\~\~\~\~\~\~\~\~\~\~\~\aN -> #\~\~\~\~\~\~\~\~\~\~\aN -> = OM\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+aC\~\~\~\~\~\~\~\~\~\~\~\aC -> #\~\~\~\~\~\~\~\~\~\~\aC -> = OCL\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+aS\~\~\~\~\~\~\~\~\~\~\~\aS -> #\~\~\~\~\~\~\~\~\~\~\aS -> = OC\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+aB\~\~\~\~\~\~\~\~\~\~\~\aB -> #\~\~\~\~\~\~\~\~\~\~\aB -> = OB\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+llamada\~\~\~\~\llamada -> llamadaC\~\~\llamada -> llamadaS\llamada -> llamadaN\llamada -> llamadaB\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+llamadaC\~\~\~\~\llamadaC -> NombreC ( datos )\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+llamadaS\~\~\~\~\~\~\~\llamadaS -> NombreS ( datos )\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+llamadaN\~\~\~\~\~\~\~\~\llamadaN -> NombreN ( datos )\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+llamadaB\~\~\~\~\~\~\~\~\~\llamadaB -> NombreB ( datos )\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+datos\~\~\~\~\datos -> valor datos'\datos -> valor datos'\datos -> #\datos -> valor datos'\datos -> valor datos'\~\~\~\~\~\datos -> valor datos'\~\datos -> valor datos'\~\~\~\datos -> valor datos'\~\~\~\~\~\~\~\~\datos -> valor datos'\datos -> valor datos'\datos -> valor datos'\~\~\~\~\datos -> valor datos'\~\~\~\~\~\~\
+datos'\~\~\~\~\~\~\datos' -> #\~\~\~\~\~\datos' -> , valor datos'\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+valor\~\~\~\~\valor -> OCL\valor -> OM\~\valor -> OC\valor -> OM\~\~\~\~\~\valor -> identificadorB\~\valor -> OM\~\~\~\valor -> OCL\~\~\~\~\~\~\~\~\valor -> OCL\valor -> OC\valor -> OC\~\~\~\~\valor -> OM\~\~\~\~\~\~\
+OCL\~\~\~\~\OCL -> car car'\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\OCL -> car car'\~\~\~\~\~\~\~\~\OCL -> car car'\~\~\~\~\~\~\~\~\~\~\~\~\~\
+car'\~\~\~\~\~\~\car' -> #\~\~\~\~\car' -> #\car' -> #\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\car' -> + car car'\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+car\~\~\~\~\car -> llamadaC\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\car -> identificadorC\~\~\~\~\~\~\~\~\car -> caracter\~\~\~\~\~\~\~\~\~\~\~\~\~\
+OC\~\~\~\~\~\~\~\OC -> pal pal'\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\OC -> pal pal'\OC -> pal pal'\~\~\~\~\~\~\~\~\~\~\~\
+pal'\~\~\~\~\~\~\pal' -> #\~\~\~\~\pal' -> #\pal' -> #\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\pal' -> + pal pal'\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+pal\~\~\~\~\~\~\~\pal -> llamadaS\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\pal -> cadena\pal -> identificadorP\~\~\~\~\~\~\~\~\~\~\~\
+OM\~\~\~\~\~\OM -> num num'\~\~\OM -> num num'\~\~\~\~\~\~\~\OM -> num num'\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\OM -> num num'\~\~\~\~\~\~\
+num'\~\~\~\~\~\~\num' -> #\~\~\~\~\num' -> #\num' -> #\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\num' -> + num num'\~\~\~\num' -> - num num'\~\~\~\~\~\~\~\~\~\~\
+num\~\~\~\~\~\num -> num2 num2'\~\~\num -> num2 num2'\~\~\~\~\~\~\~\num -> num2 num2'\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\num -> num2 num2'\~\~\~\~\~\~\
+num2'\~\~\~\~\~\~\num2' -> #\~\~\~\~\num2' -> #\num2' -> #\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\num2' -> #\~\~\~\num2' -> #\num2' -> * num2 num2'\num2' -> / num2 num2'\~\~\~\~\~\~\~\~\
+num2\~\~\~\~\~\num2 -> num3 num3'\~\~\num2 -> num3 num3'\~\~\~\~\~\~\~\num2 -> num3 num3'\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\num2 -> num3 num3'\~\~\~\~\~\~\
+num3'\~\~\~\~\~\~\num3' -> #\~\~\~\~\num3' -> #\num3' -> #\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\num3' -> #\~\~\~\num3' -> #\num3' -> #\num3' -> #\num3' -> ^ num3 num3'\~\~\~\~\~\~\~\
+num3\~\~\~\~\~\num3 -> ( OM )\~\~\num3 -> llamadaN\~\~\~\~\~\~\~\num3 -> identificadorN\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\num3 -> numero\~\~\~\~\~\~\
+OB\~\~\~\~\~\OB -> bool bool'\~\~\~\~\~\~\~\~\OB -> bool bool'\~\OB -> bool bool'\~\OB -> bool bool'\~\OB -> bool bool'\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\OB -> bool bool'\~\~\~\
+bool'\~\~\~\~\~\~\bool' -> #\~\~\~\~\bool' -> #\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\bool' -> && bool bool'\bool' -> || bool bool'\~\~\~\~\
+bool\~\~\~\~\~\bool -> ( OB )\~\~\~\~\~\~\~\~\bool -> bool2\~\bool -> bool2\~\bool -> bool2\~\bool -> bool2\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\bool -> bool2\~\~\~\
+bool2\~\~\~\~\~\~\~\~\~\~\~\~\~\~\bool2 -> identificadorB\~\bool2 -> boolN boolN'\~\bool2 -> boolS boolS'\~\bool2 -> boolC boolC'\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\bool2 -> boolean\~\~\~\
+boolC'\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\boolC' -> is boolC2\~\~\
+boolC2\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\boolC2 -> boolC\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\boolC2 -> not idC\~\
+boolC\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\boolC -> idC\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+idC\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\idC -> identificadorC\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+boolS'\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\boolS' -> is boolS2\~\~\
+boolS2\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\boolS2 -> boolS\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\boolS2 -> not idS\~\
+boolS\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\boolS -> idS\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+idS\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\idS -> identificadorS\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+boolN'\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\boolN' -> is boolN2\~\~\
+boolN2\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\boolN2 -> boolN\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\boolN2 -> not idN\~\
+boolN\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\boolN -> idN\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\
+idN\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\idN -> identificadorN\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\~\

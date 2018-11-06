@@ -6,50 +6,23 @@ public class Main {
 
 	
 
-	public static void main(String [] args) {
+	public static void main(String [] args) throws IOException {
 
-
-		
-		
-		Reglas reglas = new Reglas();
-		
-		ArrayList<String> lineasDeTokens = new ArrayList<String>() ;
-		try {
-			AnalizadorLexico lexico = new AnalizadorLexico();
-			lineasDeTokens = lexico.getLineasDeTokens();
-
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		AnalizadorLexico al = new AnalizadorLexico();
+		if(al.seguir) 
+		{
+			PreSemantico preSem = new PreSemantico(al.lineasDeTokens);
+			preSem.crearTablaDeSimbolos();
+			ALL1 all1 = new ALL1(preSem.nuevasLineasDeTokens);
+			int [] errores = all1.probarCadena();
+			if(errores[0] != -1 && errores[1] != -1)
+			{
+				System.out.print(" EN LA LINEA " + errores[0] + " CERCA DE >" + al.codigo.get(errores[0]).get(errores[1]) + 
+						al.codigo.get(errores[0]).get(errores[1]+1) 
+						+ al.codigo.get(errores[0]).get(errores[1]+2) + "<");
+			}
 		}
-		
-
-		
-		AnalizadorSintactico analizador = new AnalizadorSintactico(reglas.getRules());
-		
-	//analizador.comprobarCadena(lineasDeTokens.get(1));
-		
 
 
-//	while(true) {
-//		
-//
-//		Scanner scanner = new Scanner(System.in);
-//		
-//		System.out.println("Ingrese la cadena a probar: ");
-//		
-//		String expresion = scanner.nextLine();
-//		
-//		Reglas reglas= new Reglas();
-//		
-//		
-//		AnalizadorSintactico analizador = new AnalizadorSintactico(reglas.getRules());
-//		
-//		analizador.comprobarCadena(expresion);
-//		
-//	
-//		
-//		
-//		}
 	}
 }
